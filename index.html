@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Patrick+Hand&family=Pacifico&family=Satisfy&family=Indie+Flower&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/c1b6dc617e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="todoapp">
+            <h2>To Do List <img src="images/icon.png" alt="App Icon"></h2>
+            <div class="row">
+                <input type="text" id="input__box" placeholder="Enter Task">
+                <button onclick="addTask()">Add</button>
+            </div>
+            <ul id="list__container">
+                <!-- Tasks will be dynamically added here -->
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>  
+</body>
+</html>
