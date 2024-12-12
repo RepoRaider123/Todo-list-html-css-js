@@ -20,6 +20,7 @@
 
 /* The main to-do list app container */
 .todoapp {
+    position: relative;
     width: 100%;
     max-width: 540px;
     background: #fff;
@@ -138,6 +139,14 @@ ul li span {
 
 ul li span:hover {
     background: #edeef0;  /* Highlight delete button on hover */
+}
+
+.credits p {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 3px;
+    font-family: 'Lobster', cursive;
 }
 
 
