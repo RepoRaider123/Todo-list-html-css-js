@@ -145,4 +145,42 @@ ul li span:hover {
     .todoapp {
         flex-wrap: wrap;
     }
+    button {
+        padding: 10px 25px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .todoapp {
+        flex-wrap: wrap;
+    }
+    button {
+        padding: 10px 10px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .todoapp {
+        flex-wrap: wrap;
+    }
+    button {
+        padding: 5px 5px;
+    }
+    #input__box {
+        padding: 5px 5px;
+        margin-right: -2rem;
+    }
+}
+
+@media screen and (max-width: 265px) {
+    .todoapp {
+        flex-wrap: wrap;
+    }
+    button {
+        padding: 3px 3px;
+    }
+    #input__box {
+        padding: 3px 3px;
+        margin-right: -3rem;
+    }
 }
