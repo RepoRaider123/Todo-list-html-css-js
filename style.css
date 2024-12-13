@@ -81,6 +81,7 @@ button {
     font-size: 16px;
     cursor: pointer;
     border-radius: 40px;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Style for each list item */
@@ -146,64 +147,110 @@ ul li span:hover {
     bottom: 0;
     right: 0;
     padding: 3px;
-    font-family: 'Lobster', cursive;
-    font-size: 12px;
+    font-size: 13px;
     color: #002765;
+    font-weight: bold;
+    font-family: 'Shadows Into Light', cursive;
 }
 
+/* For screens smaller than or equal to 480px */
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 5px; /* Reduce container padding */
+    }
 
-@media screen and (max-width: 380px) {
     .todoapp {
-        flex-wrap: wrap;
+        max-width: 90%; /* Reduce the app's width */
+        margin: 20px auto; /* Adjust margins */
+        padding: 20px; /* Reduce padding for better fit */
+        border-radius: 10px;
     }
+
+    .todoapp h2 {
+        font-size: 20px; /* Adjust header font size */
+    }
+
+    .row {
+        flex-direction: column; /* Stack input and button vertically */
+        gap: 10px; /* Add spacing between input and button */
+        padding-left: 10px; /* Adjust padding */
+    }
+
+    input {
+        font-size: 14px; /* Adjust input font size */
+        padding: 8px; /* Reduce padding for smaller input */
+    }
+
     button {
-        padding: 10px 25px;
+        padding: 10px 20px; /* Adjust button padding */
+        font-size: 14px; /* Reduce button font size */
     }
+
+    ul li {
+        font-size: 14px; /* Reduce font size for list items */
+        padding: 10px 8px 10px 40px; /* Adjust padding */
+    }
+
+    ul li::before {
+        font-size: 18px; /* Reduce icon size */
+        height: 20px;
+        width: 20px;
+        top: 6px;
+        left: 6px;
+    }
+
+    ul li span {
+        width: 30px; /* Reduce delete button size */
+        height: 30px;
+        font-size: 16px;
+        line-height: 30px;
+    }
+
     .credits p {
-        font-size: 9px;
+        font-size: 10px; /* Reduce font size for credits */
     }
 }
 
-@media screen and (max-width: 330px) {
+/* For screens smaller than or equal to 320px */
+@media screen and (max-width: 320px) {
     .todoapp {
-        flex-wrap: wrap;
+        max-width: 100%; /* Use full width for very small screens */
+        padding: 15px; /* Further reduce padding */
     }
-    button {
-        padding: 10px 10px;
-    }
-    .credits p {
-        font-size: 9px;
-    }
-}
 
-@media screen and (max-width: 300px) {
-    .todoapp {
-        flex-wrap: wrap;
+    .row {
+        gap: 8px; /* Adjust spacing between input and button */
     }
-    button {
-        padding: 5px 5px;
-    }
-    #input__box {
-        padding: 5px 5px;
-        margin-right: -2rem;
-    }
-    .credits p {
-        font-size: 9px;
-    }
-}
 
-@media screen and (max-width: 265px) {
-    .todoapp {
-        flex-wrap: wrap;
+    input {
+        font-size: 12px; /* Further reduce input font size */
+        padding: 5px; /* Reduce padding for smaller input */
     }
+
     button {
-        padding: 3px 3px;
+        font-size: 12px; /* Smaller font size for button */
+        padding: 8px 15px; /* Reduce button padding */
     }
-    #input__box {
-        padding: 3px 3px;
-        margin-right: -3rem;
+
+    ul li {
+        font-size: 12px; /* Further reduce font size for list items */
+        padding: 8px 5px 8px 35px; /* Adjust padding */
     }
+
+    ul li::before {
+        font-size: 14px; /* Smaller icon size */
+        height: 15px;
+        width: 15px;
+    }
+
+    ul li span {
+        width: 25px; /* Further reduce delete button size */
+        height: 25px;
+        font-size: 14px;
+        line-height: 25px;
+    }
+
     .credits p {
-        font-size: 9px;
+        font-size: 8px; /* Further reduce font size for credits */
     }
 }
